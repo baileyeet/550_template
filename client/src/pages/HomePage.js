@@ -61,13 +61,13 @@ export default function HomePage() {
     {
       field: 'album',
       headerName: 'Album Title',
-      renderCell: (row) => <NavLink to={`/albums/${row}`}>{row.title}</NavLink> // A NavLink component is used to create a link to the album page
+      renderCell: (row) => <NavLink to={`/albums/${row.album_id}`}>{row.title}</NavLink>
     },
     {
-      // this part is wrong lol
+      // fixed it heehee
       field: 'plays',
-      headerName: 'Song Title',
-      renderCell: (row) => <Link onClick={() => setSelectedSongId(row.song_id)}>{row.title}</Link> // A Link component is used just for formatting purposes
+      headerName: 'Plays',
+      renderCell: (row) => row.total_plays  // It's pretty straightforward lollll（*´▽｀*）
     },
   ]
 
