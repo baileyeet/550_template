@@ -19,8 +19,8 @@ connection.connect((err) => err && console.log(err));
 // Route 1: GET /author/:type
 const author = async function(req, res) {
   // TODO (TASK 1): replace the values of name and pennKey with your own
-  const name = 'Test Name';
-  const pennKey = 'testName';
+  const name = 'Machiko Hirota';
+  const pennKey = 'bhirota';
 
   // checks the value of type the request parameters
   // note that parameters are required and are specified in server.js in the endpoint by a colon (e.g. /author/:type)
