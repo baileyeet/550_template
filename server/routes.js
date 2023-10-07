@@ -219,7 +219,7 @@ const top_albums = async function(req, res) {
   // TODO (TASK 11): return the top albums ordered by aggregate number of plays of all songs on the album (descending), with optional pagination (as in route 7)
   // Hint: you will need to use a JOIN and aggregation to get the total plays of songs in an album
   const page = req.query.page;
-  const pageSize = req.query.pageSize ? parseInt(req.query.pageSize) : 10;
+  const pageSize = req.query.page_size ? parseInt(req.query.page_size) : 10;
 
   if (!page) {
     connection.query(
